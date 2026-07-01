@@ -214,9 +214,9 @@ h2 {
 
 .benchmark-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
-  width: min(760px, 100%);
+  width: min(920px, 100%);
   margin-top: 48px;
 }
 
@@ -371,7 +371,7 @@ footer {
   }
 
   .benchmark-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -410,5 +410,9 @@ footer {
   .phone-photo {
     min-height: 520px;
     border-width: 8px;
+  }
+
+  .benchmark-grid {
+    grid-template-columns: 1fr;
   }
 }
