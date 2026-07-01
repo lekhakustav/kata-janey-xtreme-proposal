@@ -212,6 +212,37 @@ h2 {
   line-height: 1.5;
 }
 
+.benchmark-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  width: min(760px, 100%);
+  margin-top: 48px;
+}
+
+.benchmark-grid div {
+  padding-top: 20px;
+  border-top: 3px solid var(--red);
+}
+
+.benchmark-grid span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.benchmark-grid p {
+  margin-bottom: 0;
+  color: var(--soft-ink);
+  font-size: clamp(15px, 1.7vw, 18px);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
 .mobile-display {
   position: relative;
   z-index: 1;
@@ -337,6 +368,10 @@ footer {
 
   .phone-photo {
     min-height: 500px;
+  }
+
+  .benchmark-grid {
+    grid-template-columns: 1fr;
   }
 }
 
