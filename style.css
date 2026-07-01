@@ -204,6 +204,14 @@ h2 {
   color: var(--red);
 }
 
+.section-note {
+  max-width: 700px;
+  margin: 34px 0 0;
+  color: var(--soft-ink);
+  font-size: clamp(16px, 1.8vw, 21px);
+  line-height: 1.5;
+}
+
 .mobile-display {
   position: relative;
   z-index: 1;
